@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gifs & Giggles</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body id="htmlBody">
+    <div class="container dark">
+    <header class="section text-center is-size-3">
+        <div class="container">
+            <h1 class="title is-size-1" id="webTitle">
+                Gifs & Giggles
+            </h1>
+            <p class="subtitle is-size-2" id="webSubTitle">
+                Have a laugh!
+            </p>
+    <!--BUTTON SHOULD INITIALIZE MODEL FOR INPUT-->
+            <button class="button is-large" id="reloadButton">&#8634;</button>
+            <button class="button is-large" id="intModal">Choose your laugh!</button>
+            <button class="button is-large" id="themeSwitcher">🤣</button>
+    <!--THIS IS THE MODAL -->        
+    <div id="modal-js-example" class="modal">
+        <div class="modal-background "></div>
+            <div class="modal-content">
+          <!-- Any other Bulma elements you want -->
+          <p class="modal-card-title is-size-1">Choose your category</p>
+                <form action=''class="control">
+                    <div class="select">
+                        <select name='dropdown'class="dropdown" type="input">
+                            <option value="programming">programming</option>
+                            <option value="pun">pun</option>
+                            <option value="spooky">spooky</option>
+                            <option value="christmas">christmas</option>
+                            <option value="misc">misc</option>
+                        </select>
+                        </div>
+                    <button id='submitButton' type="submit" class="button is-success">Submit</button>
+                    <button class="modal-close is-large" aria-label="close"></button>
+                </form>
+            </div>
+        </div>
+    </div>
+    </header>
+
+    <!--THIS SECTION CONTAINS THE GIF N GIGGLES CONTAINERS AND TITLES-->
+    <main class="columns is-gapless is-0" id="mainBody"> 
+        <div id="firstPageContainer">
+        <h2 class="column has-text-centered pb-6 " id="initDescription">Click the Choose your laugh! Button to start!!</h2>
+        <p class="buttons has-text-centered" id="gitHubButtons">
+            <button class="button is-large m-4" id="cliffButton">
+                <span class="icon is-medium">
+                  <i class="fa fa-github"></i>
+                </span>
+                <span>Cliff GitHub</span>
+              </button>
+              <button class="button is-large m-4" id="erikButton">
+                <span class="icon is-medium">
+                  <i class="fa fa-github"></i>
+                </span>
+                <span>Erik GitHub</span>
+              </button>
+              <button class="button is-large m-4" id="pauleeButton">
+                <span class="icon is-medium">
+                  <i class="fa fa-github"></i>
+                </span>
+                <span>Paulee GitHub</span>
+              </button>
+              <button class="button is-large m-4" id="reynButton">
+                <span class="icon is-medium">
+                  <i class="fa fa-github"></i>
+                </span>
+                <span>Reyn GitHub</span>
+              </button>
+        </p>
+    </div>
+    <!--THIS IS THE GIFS CONTAINER WITH PLACE HOLDER-->
+    <div class="container is-half" id="gifDiv">   
+        <h2 class="column has-text-centered is-size-3" id="gifTitleNEmoji"><span id="gifTitle">Gifs</span> 🃏</h2> 
+        <figure id="gifContainer"></figure>
+        <strong id="giphyName">Powered by Giphy</strong>  
+        <button class="button" id="gifSwitcher">New Gif</button>
+    </div>
+    
+    <!--THIS IS THE GIGGLES CONTAINER - BEING APPENED TO VIA JS-->        
+    <div class="container" id="gigglesContainer">
+        <h2 class="column is-size-3" id="gigglesTitleNEmoji"><span id="gigglesTitle">Giggles</span> 😂</h2>
+    </div>
+</main>
+    <script src="./assets/js/script.js"></script>
+</div>
+</body>

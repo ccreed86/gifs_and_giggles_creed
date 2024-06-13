@@ -1,0 +1,217 @@
+:root {
+    --darkBackground: #222831;
+    --lightFont: #393e46;
+    --darkFont: #005792;
+    --lightBackground: #f2f2f2;
+    --fontFamily: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: unset;
+    width:auto;
+}
+
+*{ 
+    font-family: var(--fontFamily);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    width:100%;
+}
+
+#submitButton{
+    width: 5rem;
+    padding: .5rem;
+    margin-left: 1rem;
+    height: 3rem;
+    background-color: aliceblue;
+}
+.divGiggles{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.modal-card-title {
+    padding-bottom: 20px;
+}
+
+.container{
+    width:auto;
+}
+.text-center, 
+#gifContainer{
+    text-align: center;
+}
+#gigglesContainer{
+    text-align: center;
+    width:auto;
+
+}
+
+#gifDiv{
+    text-align: center;
+}
+#gifSwitcher{
+    margin: 1rem auto;
+}
+#gifTitle{
+    margin-bottom: 1rem;
+}
+
+#gifContainer{
+    display: flex;
+    justify-content: center;
+
+}
+#mainBody {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100vh;
+
+}
+
+.jokeDelivery {
+    margin: 0;
+}
+
+.jokeSetup {
+    margin: 0;
+}
+#initDescription{
+    font-size: 4vw;
+}
+#giphyName {
+    background: #121FCF;
+    background: linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Theme Switcher styles */
+
+/* Dark Styles Start */
+.dark header{
+    
+    background-color: var(--lightFont);
+    color: var(--darkFont);
+}
+
+.dark footer{
+
+    background-color: var(--lightFont);
+    
+}
+
+.dark footer a{
+
+    color: var(--lightBackground);
+
+}
+
+.dark #webTitle,
+#webSubTitle {
+    background: #008080;
+    background: linear-gradient(to left, #008080 0%, #FFFFFF 25%, #05C1FF 50%, #FFFFFF 75%, #005757 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.dark #webSubTitle {
+    background: #008080;
+    background: linear-gradient(to left, #008080 0%, #FFFFFF 25%, #05C1FF 50%, #FFFFFF 75%, #005757 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.dark #gigglesTitle {
+    background: #008080;
+    background: linear-gradient(to left, #008080 0%, #FFFFFF 25%, #05C1FF 50%, #FFFFFF 75%, #005757 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+}
+
+.dark #gifTitle {
+    background: #008080;
+    background: linear-gradient(to left, #008080 0%, #FFFFFF 25%, #05C1FF 50%, #FFFFFF 75%, #005757 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+}
+
+.dark #initDescription {
+    background: #008080;
+    background: linear-gradient(to left, #008080 0%, #FFFFFF 25%, #05C1FF 50%, #FFFFFF 75%, #005757 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+}
+
+.dark .divGiggles{
+    color: white;
+}
+
+.dark #mainBody {
+
+    background-color: var(--darkBackground);
+    color: var(--darkFont);
+
+}
+
+.dark .jokeDelivery{
+    color: yellow;
+}
+
+/* Dark Styles End */
+
+/* Light Styles Start */
+
+.light header{
+
+    background-color: var(--darkFont);
+    color: var(--lightFont);
+}
+
+.light #webTitle, 
+#webSubTitle {
+    background: #959595;
+    background: linear-gradient(to right, #959595 0%, #0D0D0D 46%, #010101 50%, #0A0A0A 53%, #4E4E4E 76%, #383838 87%, #1B1B1B 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.light #gifTitle,
+#gigglesTitle,
+#initDescription {
+    background: #959595;
+    background: linear-gradient(to right, #959595 0%, #0D0D0D 46%, #010101 50%, #0A0A0A 53%, #4E4E4E 76%, #383838 87%, #1B1B1B 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+}
+
+.light footer {
+
+    background-color: var(--darkFont);
+}
+.light footer a{
+
+    color: var(--lightBackground);
+}
+
+.light #mainBody {
+
+    background-color: var(--lightBackground);
+    color: var(--lightFont)
+}
+
+.light .divGiggles{
+    color: black;
+}
+
+.light .jokeDelivery {
+    color: var(--darkFont);
+}
